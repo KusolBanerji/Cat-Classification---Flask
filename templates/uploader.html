@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Cat Image Classification</title>
+        <style>
+            p {
+                font-size: 20px;
+            }
+        </style>
+    </head>
+   <body style="padding-top: 3%;">
+       <center>
+           <div style="width: 52%;">
+               <h1>Cat 🐱 or Not prediction using Artificial Neural Network</h1>
+               <p>Here is the image that you uploaded....</p>
+           </div>
+           <img style="max-height: 40%; width: auto;" src="{{url_for('static', filename=user_image)}}" alt="Image">
+           <div style="width: 52%;">
+               <p><strong>Result:</strong> The image you uploaded is a <strong>{{pred_value}}</strong> image.</p>
+               <a style="text-decoration: none; font-size: 20px;" href="/">Try again ?</a>
+               <p style="text-align: right;"> - Prepared by Kusol Banerji</p>
+           </div>           
+       </center>
+   </body>
+</html>
